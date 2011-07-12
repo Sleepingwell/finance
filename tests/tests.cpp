@@ -16,9 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "../include/SKT/finance/irr.h"
-#include "../include/SKT/finance/npv.h"
-#include "../include/SKT/finance/payback.h"
+#include "../include/SKT/finance/irr.hpp"
+#include "../include/SKT/finance/npv.hpp"
+#include "../include/SKT/finance/payback.hpp"
 
 int main(int argc, char* argv[]) {
 	unsigned int nPayments(10), i;
