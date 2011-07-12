@@ -185,15 +185,15 @@
 				>
 			</File>
 			<File
-				RelativePath="..\include\SKT\finance\irr.h"
+				RelativePath="..\include\SKT\finance\irr.hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\include\SKT\finance\npv.h"
+				RelativePath="..\include\SKT\finance\npv.hpp"
 				>
 			</File>
 			<File
-				RelativePath="..\include\SKT\finance\payback.h"
+				RelativePath="..\include\SKT\finance\payback.hpp"
 				>
 			</File>
 			<File

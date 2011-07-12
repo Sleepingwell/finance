@@ -16,6 +16,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**
+ * \file npv.hpp
+ * Functions for calculating net present values.
+ */
+
 #ifndef SK_FIN_NPV_HEADER_INCLUDED_WOPR8UPSBWPOHWP
 #define SK_FIN_NPV_HEADER_INCLUDED_WOPR8UPSBWPOHWP
 

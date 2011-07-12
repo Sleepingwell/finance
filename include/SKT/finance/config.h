@@ -16,6 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**
+ * \file config.h
+ * Configuration options for library finance.
+ */
 #ifndef SKT_CONFIG_HEADER_INCLUDED_P5PSBOIJWPTOTIHUOP
 #define SKT_CONFIG_HEADER_INCLUDED_P5PSBOIJWPTOTIHUOP
 

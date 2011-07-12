@@ -16,6 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**
+ * \file payback.hpp
+ * Functions and associated utilities for calculating (non-discounted) payback periods.
+ */
 #ifndef SK_FIN_PAYBACK_HEADER_INCLUDED_POIURWIFBNIUHJW
 #define SK_FIN_PAYBACK_HEADER_INCLUDED_POIURWIFBNIUHJW
 

@@ -1,0 +1,7 @@
+/**
+@mainpage
+A set of tools for doing various financial calculations.
+
+@todo Make the interfaces for \c npv and \c payback mirror those of irr.
+@todo Change \c npv and \c payback to use \c stl algorithms (now that I'm a better programmer :-).
+*/
