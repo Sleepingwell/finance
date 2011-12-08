@@ -23,24 +23,22 @@
 #ifndef SK_FIN_PAYBACK_HEADER_INCLUDED_POIURWIFBNIUHJW
 #define SK_FIN_PAYBACK_HEADER_INCLUDED_POIURWIFBNIUHJW
 
-#include "config.h"
+#include "finance_config.h"
 #include <limits>
 #include <cassert>
 
-namespace SKT {
-	namespace finance {
-		template<typename Iter>
-		static SK_FIN_ACC_TYPE paybackPeriod(Iter start, Iter end, SK_FIN_ACC_TYPE expenditure) {
-			if(expenditure <= 0.0) return 0.0;
-			SK_FIN_ACC_TYPE tot(0.0), at(0.0);
-			bool found(false);
-			for(; start != end; ++start, ++at) if(found = (tot += *start) > expenditure) break;
-			if(!found) return std::numeric_limits<SK_FIN_ACC_TYPE>::infinity();
-			tot = (at + (expenditure - (tot - *start)) / *start);
-			assert(tot >= 0.0);
-			return tot;
-		}
-	} // end namespace fin
-} // end namespace SK
+namespace finance {
+	template<typename Iter>
+	static SK_FIN_ACC_TYPE paybackPeriod(Iter start, Iter end, SK_FIN_ACC_TYPE expenditure) {
+		if(expenditure <= 0.0) return 0.0;
+		SK_FIN_ACC_TYPE tot(0.0), at(0.0);
+		bool found(false);
+		for(; start != end; ++start, ++at) if(found = (tot += *start) > expenditure) break;
+		if(!found) return std::numeric_limits<SK_FIN_ACC_TYPE>::infinity();
+		tot = (at + (expenditure - (tot - *start)) / *start);
+		assert(tot >= 0.0);
+		return tot;
+	}
+} // end namespace finance
 
 #endif //SK_FIN_PAYBACK_HEADER_INCLUDED_POIURWIFBNIUHJW

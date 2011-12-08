@@ -16,9 +16,9 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "../include/SKT/finance/irr.hpp"
-#include "../include/SKT/finance/npv.hpp"
-#include "../include/SKT/finance/payback.hpp"
+#include "../include/finance/irr.hpp"
+#include "../include/finance/npv.hpp"
+#include "../include/finance/payback.hpp"
 
 int main(int argc, char* argv[]) {
 	unsigned int nPayments(10), i;
@@ -31,13 +31,13 @@ int main(int argc, char* argv[]) {
 		payments[i] = 5.0;
 		times[i] = static_cast<double>(i);
 	}
-	printf("irrt = %f\n", SKT::finance::irr(payments, payments+nPayments, times, times+nPayments, tolerance));
-	printf("irr = %f\n", SKT::finance::irr(payments, payments+nPayments, false, tolerance));
-	printf("fva = %f\n", SKT::finance::fv(5.0, 10, .1, 0.0, true));
-	printf("fv = %f\n", SKT::finance::fv(5.0, 10, .1, 0.0, false));
-	printf("npva = %f\n", SKT::finance::npv(5.0, 10, .1, 0.0, true));
-	printf("npv = %f\n", SKT::finance::npv(5.0, 10, .1, 0.0, false));
-	printf("pp = %f\n", SKT::finance::paybackPeriod(payments+1, payments+nPayments, 26.34));
+	printf("irrt = %f\n", finance::irr(payments, payments+nPayments, times, times+nPayments, tolerance));
+	printf("irr = %f\n", finance::irr(payments, payments+nPayments, false, tolerance));
+	printf("fva = %f\n", finance::fv(5.0, 10, .1, 0.0, true));
+	printf("fv = %f\n", finance::fv(5.0, 10, .1, 0.0, false));
+	printf("npva = %f\n", finance::npv(5.0, 10, .1, 0.0, true));
+	printf("npv = %f\n", finance::npv(5.0, 10, .1, 0.0, false));
+	printf("pp = %f\n", finance::paybackPeriod(payments+1, payments+nPayments, 26.34));
 	delete [] payments;
 	delete [] times;
 	system("PAUSE");
