@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>finance: include/SKT/finance/config.h File Reference</title>
+<title>finance: finance::detail Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,9 +30,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li id="searchli">
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -53,30 +53,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
+    </ul>
+  </div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="namespacefinance.html">finance</a>      </li>
+      <li class="navelem"><a class="el" href="namespacefinance_1_1detail.html">detail</a>      </li>
     </ul>
   </div>
 </div>
 <div class="header">
   <div class="summary">
-<a href="#define-members">Defines</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">include/SKT/finance/config.h File Reference</div>  </div>
+<div class="title">finance::detail Namespace Reference</div>  </div>
 </div>
 <div class="contents">
 
-<p>Configuration options for library finance.  
+<p>Utility code for internal rate of return calculations.  
 <a href="#details">More...</a></p>
-
-<p><a href="config_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fe184f17ebeb93d85333edeed00a6e0"></a><!-- doxytag: member="config.h::SK_FIN_ACC_TYPE" ref="a9fe184f17ebeb93d85333edeed00a6e0" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SK_FIN_ACC_TYPE</b>&#160;&#160;&#160;double</td></tr>
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfinance_1_1detail_1_1_derivator.html">Derivator</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary Function object for calculating the derivitive (w.r.t to the interest rate) of the present value of a payment.  <a href="structfinance_1_1detail_1_1_derivator.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfinance_1_1detail_1_1_evaluator.html">Evaluator</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary Function object for calculating the present value of a payment.  <a href="structfinance_1_1detail_1_1_evaluator.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfinance_1_1detail_1_1_counter.html">Counter</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple counting iterator (which I think is standards compliant).  <a href="structfinance_1_1detail_1_1_counter.html#details">More...</a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Configuration options for library finance. </p>
+<div class="textblock"><p>Utility code for internal rate of return calculations. </p>
 </div></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -92,7 +101,7 @@ Defines</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 12 2011 14:46:58 for finance by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Jan 10 2012 15:06:39 for finance by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

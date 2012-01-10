@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>finance: SKT::finance::detail::Evaluator Struct Reference</title>
+<title>finance: finance::detail::Derivator Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -60,10 +60,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="namespace_s_k_t.html">SKT</a>      </li>
-      <li class="navelem"><a class="el" href="namespace_s_k_t_1_1finance.html">finance</a>      </li>
-      <li class="navelem"><a class="el" href="namespace_s_k_t_1_1finance_1_1detail.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator.html">Evaluator</a>      </li>
+      <li class="navelem"><a class="el" href="namespacefinance.html">finance</a>      </li>
+      <li class="navelem"><a class="el" href="namespacefinance_1_1detail.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="structfinance_1_1detail_1_1_derivator.html">Derivator</a>      </li>
     </ul>
   </div>
 </div>
@@ -72,36 +71,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">SKT::finance::detail::Evaluator Struct Reference</div>  </div>
+<div class="title">finance::detail::Derivator Struct Reference</div>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="SKT::finance::detail::Evaluator" -->
-<p>Binary Function object for calculating the present value of a payment.  
- <a href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator.html#details">More...</a></p>
+<!-- doxytag: class="finance::detail::Derivator" -->
+<p>Binary Function object for calculating the derivitive (w.r.t to the interest rate) of the present value of a payment.  
+ <a href="structfinance_1_1detail_1_1_derivator.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="irr_8hpp_source.html">irr.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="detail_8h_source.html">detail.h</a>&gt;</code></p>
 
-<p><a href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator-members.html">List of all members.</a></p>
+<p><a href="structfinance_1_1detail_1_1_derivator-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator.html#ad8a986b0950ee035703edc94df6cc1a2">operator()</a> (SK_FIN_ACC_TYPE payment, SK_FIN_ACC_TYPE period)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the present value of a payment.  <a href="#ad8a986b0950ee035703edc94df6cc1a2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae877c7e1c1bcb866b987552e91f97314"></a><!-- doxytag: member="finance::detail::Derivator::Derivator" ref="ae877c7e1c1bcb866b987552e91f97314" args="(SK_FIN_ACC_TYPE i=0.0)" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>Derivator</b> (SK_FIN_ACC_TYPE <a class="el" href="structfinance_1_1detail_1_1_derivator.html#a9ddb8db206a860cb454f44ba7d1f9b55">i</a>=0.0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfinance_1_1detail_1_1_derivator.html#a13fe4bee6bb5439e6567e6d127417be6">operator()</a> (SK_FIN_ACC_TYPE payment, SK_FIN_ACC_TYPE period)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the derivitive of the present value of a payment.  <a href="#a13fe4bee6bb5439e6567e6d127417be6"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d1126e907d4eec9688e5ed3ba24df2b"></a><!-- doxytag: member="SKT::finance::detail::Evaluator::i" ref="a4d1126e907d4eec9688e5ed3ba24df2b" args="" -->
-SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator.html#a4d1126e907d4eec9688e5ed3ba24df2b">i</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ddb8db206a860cb454f44ba7d1f9b55"></a><!-- doxytag: member="finance::detail::Derivator::i" ref="a9ddb8db206a860cb454f44ba7d1f9b55" args="" -->
+SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfinance_1_1detail_1_1_derivator.html#a9ddb8db206a860cb454f44ba7d1f9b55">i</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The interest rate to be used in the present value calculation. <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Binary Function object for calculating the present value of a payment. </p>
+<div class="textblock"><p>Binary Function object for calculating the derivitive (w.r.t to the interest rate) of the present value of a payment. </p>
 </div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ad8a986b0950ee035703edc94df6cc1a2"></a><!-- doxytag: member="SKT::finance::detail::Evaluator::operator()" ref="ad8a986b0950ee035703edc94df6cc1a2" args="(SK_FIN_ACC_TYPE payment, SK_FIN_ACC_TYPE period)" -->
+<a class="anchor" id="a13fe4bee6bb5439e6567e6d127417be6"></a><!-- doxytag: member="finance::detail::Derivator::operator()" ref="a13fe4bee6bb5439e6567e6d127417be6" args="(SK_FIN_ACC_TYPE payment, SK_FIN_ACC_TYPE period)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SK_FIN_ACC_TYPE SKT::finance::detail::Evaluator::operator() </td>
+          <td class="memname">SK_FIN_ACC_TYPE finance::detail::Derivator::operator() </td>
           <td>(</td>
           <td class="paramtype">SK_FIN_ACC_TYPE&#160;</td>
           <td class="paramname"><em>payment</em>, </td>
@@ -121,7 +122,7 @@ SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 <div class="memdoc">
 
-<p>Calculate the present value of a payment. </p>
+<p>Calculate the derivitive of the present value of a payment. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">payment</td><td>The amount of the payment. </td></tr>
@@ -133,7 +134,7 @@ SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/SKT/finance/<a class="el" href="irr_8hpp_source.html">irr.hpp</a></li>
+<li>include/finance/<a class="el" href="detail_8h_source.html">detail.h</a></li>
 </ul>
 </div>
 <!-- window showing the filter options -->
@@ -150,7 +151,7 @@ SK_FIN_ACC_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 12 2011 14:46:59 for finance by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Jan 10 2012 15:06:39 for finance by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

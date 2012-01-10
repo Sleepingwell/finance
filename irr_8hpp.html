@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>finance: include/SKT/finance/irr.hpp File Reference</title>
+<title>finance: include/finance/irr.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -59,59 +59,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">include/SKT/finance/irr.hpp File Reference</div>  </div>
+<div class="title">include/finance/irr.hpp File Reference</div>  </div>
 </div>
 <div class="contents">
 
 <p>Functions and associated utilities for calculating internal rates of return.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="config_8h_source.html">config.h</a>&quot;</code><br/>
+<div class="textblock"><code>#include &quot;finance_config.h&quot;</code><br/>
+<code>#include &quot;detail.h&quot;</code><br/>
 <code>#include &lt;cmath&gt;</code><br/>
 <code>#include &lt;numeric&gt;</code><br/>
-<code>#include &lt;iterator&gt;</code><br/>
 </div>
 <p><a href="irr_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_k_t_1_1finance_1_1detail_1_1_derivator.html">SKT::finance::detail::Derivator</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary Function object for calculating the derivitive (w.r.t to the interest rate) of the present value of a payment.  <a href="struct_s_k_t_1_1finance_1_1detail_1_1_derivator.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator.html">SKT::finance::detail::Evaluator</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary Function object for calculating the present value of a payment.  <a href="struct_s_k_t_1_1finance_1_1detail_1_1_evaluator.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s_k_t_1_1finance_1_1detail_1_1_counter.html">SKT::finance::detail::Counter</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple counting iterator (which I think is standards compliant).  <a href="struct_s_k_t_1_1finance_1_1detail_1_1_counter.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_s_k_t.html">SKT</a></td></tr>
-
-<p><tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Contains various code initially developed by Simon Knapp. </p>
-<br/></td></tr>
-</p>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_s_k_t_1_1finance.html">SKT::finance</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefinance.html">finance</a></td></tr>
 
 <p><tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Contains various financial calculations. </p>
-<br/></td></tr>
-</p>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_s_k_t_1_1finance_1_1detail.html">SKT::finance::detail</a></td></tr>
-
-<p><tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Utility code for internal rate of return calculations. </p>
 <br/></td></tr>
 </p>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename IterP , typename IterT &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_s_k_t_1_1finance.html#a6641197adf482c239f89665f798612b6">SKT::finance::irr</a> (IterP beginp, IterP endp, IterT begint, SK_FIN_ACC_TYPE tolerance=0.01, unsigned int maxIterations=1000)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the internal rate of return for a series of payments using Newton's method.  <a href="#a6641197adf482c239f89665f798612b6"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefinance.html#abe5083e6c2d0636ea242cf1c476e3363">finance::irr</a> (IterP beginp, IterP endp, IterT begint, SK_FIN_ACC_TYPE tolerance=0.01, unsigned int maxIterations=1000)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the internal rate of return for a series of payments using Newton's method.  <a href="#abe5083e6c2d0636ea242cf1c476e3363"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename IterP , typename IterT &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_s_k_t_1_1finance.html#a18f9a0e72097660736e964b10e18819f">SKT::finance::irr</a> (IterP beginp, IterP endp, IterT begint, IterT endt, SK_FIN_ACC_TYPE tolerance=0.01, unsigned int maxIterations=1000)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Calculates the internal rate of return for a series of payments using Newton's method.  <a href="#a18f9a0e72097660736e964b10e18819f"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefinance.html#a288b87a0fd4c8876b000137a610912b4">finance::irr</a> (IterP beginp, IterP endp, IterT begint, IterT endt, SK_FIN_ACC_TYPE tolerance=0.01, unsigned int maxIterations=1000)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. Calculates the internal rate of return for a series of payments using Newton's method.  <a href="#a288b87a0fd4c8876b000137a610912b4"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename IterP &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_s_k_t_1_1finance.html#a7163064a385034fe8a2999f9e7ed3c5b">SKT::finance::irr</a> (IterP beginp, IterP endp, bool arrears, SK_FIN_ACC_TYPE tolerance=0.01, unsigned int maxIterations=1000)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the internal rate of return for a series of payments using Newton's method.  <a href="#a7163064a385034fe8a2999f9e7ed3c5b"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">SK_FIN_ACC_TYPE&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefinance.html#abd70e383db1d8f80a3e40f8bf9ac1a48">finance::irr</a> (IterP beginp, IterP endp, bool arrears, SK_FIN_ACC_TYPE tolerance=0.01, unsigned int maxIterations=1000)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the internal rate of return for a series of payments using Newton's method.  <a href="#abd70e383db1d8f80a3e40f8bf9ac1a48"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Functions and associated utilities for calculating internal rates of return. </p>
@@ -130,7 +111,7 @@ Functions</h2></td></tr>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue Jul 12 2011 14:46:58 for finance by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Tue Jan 10 2012 15:06:39 for finance by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
