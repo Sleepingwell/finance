@@ -40,9 +40,9 @@ namespace finance {
 	}
 
 	template<typename PIter, typename TIter>
-	static double npv(PIter start, PIter end, TIter times, double i, double r, bool arrears){
-        //detail::
-		double rate((1+r)/(1+i)), res(0.0);
+	static double npvTimes(PIter start, PIter end, TIter times, double rate, double inflation=0.0){
+        double res(0.0);
+        rate = (1.0+inflation)/(1.0+rate);
 		for( ; start<end; ++start, ++times) res += *start * pow(rate, *times);
 		return res;
 	}
